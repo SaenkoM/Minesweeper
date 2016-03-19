@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Miner</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/miner.css">
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/miner.js" defer></script>
+</head>
+<body>
+<div id="fade" class="black-overlay"></div>
+<div id="newgame_window">
+  <input type="button" class="diff" value="Novice" onclick="newgame('novice')"><br>
+  <input type="button" class="diff" value="Intermediate" onclick="newgame('intermediate')"><br>
+  <input type="button" class="diff" value="Expert" onclick="newgame('expert')">
+</div>
+<div id="endgame_window">
+  <p id="endgame_message"></p>
+  <input type="button" value="Try again" onclick="closeEndgameWindow(); restart()">
+</div>
+<section id="bombs_timer">
+  <span id="bombs">0</span><img class="icon" src="images/bomb.png"><span id="timer">0</span><img class="icon" id="clocks" src="images/timer.png"><br>
+  <input type="button" value="New game" onclick="open_newgame_window()">
+  <input type="button" value="Restart" onclick="restart()">
+</section>
+<section id="main_window"></section>
+</body>
+</html>
