@@ -1,0 +1,116 @@
+#main_window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#table {
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+#table td {
+  padding: 0;
+  cursor: default;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid black;
+}
+
+#bombs_timer {
+  text-align: center;
+  font-size: 30px;
+}
+
+#timer {
+  margin-left: 70px;
+}
+
+#bomb {
+  text-align:center;
+  width: 20px;
+  height: 20px;
+  background: url(images/bomb.png);
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+input[type='button'] {
+  width: 120px;
+  height: 25px;
+}
+
+input[type='button']:hover {
+  outline: none;
+  border: 2px solid darkgreen;
+}
+
+#clocks {
+  margin-left: 7px;
+  width: 25px;
+  height: 25px;
+}
+
+.black-overlay {
+  display: none;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: black;
+  z-index:1001;
+  opacity:.70;
+}
+#newgame_window {
+  text-align: center;
+  display: none;
+  position: fixed;
+  width: 230px;
+  height: 144px;
+  margin: 0 auto;
+  background: white;
+  border: 3px solid black;
+  z-index:1003;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#endgame_window {
+  text-align: center;
+  display: none;
+  position: fixed;
+  width: 220px;
+  height: 75px;
+  margin: 0 auto;
+  background: white;
+  border: 3px solid black;
+  z-index:1003;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.diff {
+  margin-top: 17px;
+}
